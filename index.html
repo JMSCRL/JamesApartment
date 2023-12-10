@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JamesApartment - Choose your dream home</title>
+  <!--======== custom css link =========-->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!--========= google font link ========-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./image/james 4.jpg" >
+</head>
+<body>
+    
+    
+   <header class="header" data-header>
+        <div class="container">
+            <a href="" class="logo">
+                <ion-icon name="home-outline"></ion-icon> JamesApartment
+            </a>
+
+            <nav class="navbar container" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="user_login/login.html" class="btn btn-secondary">Sign Up</a> <!-- Link to the login page -->
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+            </button>
+        </div>
+    </header>
+
+   <!--======== main =========-->
+   <main>
+        <article class="article">
+            <section class="section hero" aria-label="hero">
+                <div class="container">
+                    <div class="hero-bg">
+                        <div class="hero-content">
+                            <h1 class="h1 hero-title"> 
+                                We serve our best<span class="span">HOME</span> to your family
+                            </h1>
+
+                            <p class="hero-text">
+                                Easy to use. Convenient. All in one place.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-form-wrapper">
+                        <div class="form-tab">
+                            <button class="tab-btn active" data-tab-btn>Buy</button>
+                            <button class="tab-btn " data-tab-btn>Sell</button>
+                            <button class="tab-btn " data-tab-btn>Rent</button>
+                        </div>
+
+                        <form action="" class="hero-form">
+                            <div class="input-wrapper">
+                                <label for="search" class="input-label">Search: *</label>
+                                <input type="search" name="search" id="search" placeholder="Search your home" required class="input-field">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="category" class="input-label">Select Categories</label>
+                                <select name="category" id="category" class="dropdown-list">
+                                    <option value="house">House</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="offices">Offices</option>
+                                    <option value="townhome">Townhome</option>
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="min-price" class="input-label">Min Price :</label>
+                                <select name="min-price" id="min-price" class="dropdown-list">
+                                    <option value="min price">Min Price</option>
+                                    <option value="500">500</option>
+                                    <option value="1000">1000</option>
+                                    <option value="2000">2000</option>
+                                    <option value="3000">3000</option>
+                                    <option value="4000">4000</option>
+                                    <option value="5000">5000</option>
+                                    <option value="6000">6000</option>
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="max-price" class="input-label">Max Price :</label>
+                                <select name="max-price" id="max-price" class="dropdown-list">
+                                    <option value="max price">Max Price</option>
+                                    <option value="500">500</option>
+                                    <option value="1000">1000</option>
+                                    <option value="2000">2000</option>
+                                    <option value="3000">3000</option>
+                                    <option value="4000">4000</option>
+                                    <option value="5000">5000</option>
+                                    <option value="6000">6000</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Search now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section about" id="about" aria-level="about">
+                <div class="container">
+                    <div class="about-banner img-holder" style="--width: 600; --height: 700;">
+                        <img src="image/house4.jpg" width="600px" height="700px" loading="lazy" alt="" class="img-cover">
+
+                        <button class="play-btn" aria-label="play video">
+                            <a href="APARTMENT COMMERCIAL.mp4"><ion-icon name="play" aria-hidden="true"></ion-icon></a>
+                        </button>
+                    </div>
+
+                    <div class="about-content">
+                        <h2 class="h2 section-title">Trusted. Affordable. Transparent</h2>
+                        <p class="section-text">Search thousands of up-to-date property listings on our easy-to-use website. Narrow down your options by choosing what's most important to you, such as number of bedrooms and bathrooms, price range, location, pet policy and more.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== SECTION ==========-->
+            <section class="section service" id="service" aria-label="service">
+                <div class="container">
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-text">Discover the simplicity of our renting process: Browse, Choose, Move In. It's as easy as finding, deciding, and settling into your perfect home with us</p>
+                    <ul class="service-list">
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <h3 class="h3 card-title">Evaluate Property</h3>
+                                <p class="card-text">
+                                    Discover the art of property evaluation - where we meticulously analyze every detail to find the home that matches your dreams.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <ion-icon name="briefcase-outline"></ion-icon>
+                                </div>
+                                <h3 class="h3 card-title">Meeting With Agent</h3>
+                                <p class="card-text">
+                                    "Experience the personal touch of our dedicated agents. They're not just here to show you houses; they're here to guide you on your journey to finding the perfect home.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <ion-icon name="key-outline"></ion-icon>
+                                </div>
+                                <h3 class="h3 card-title">Close The Deal</h3>
+                                <p class="card-text">
+                                    Seal the deal on your future with confidence. Our team is committed to making your dream home a reality, step by step, until the keys are in your hands.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--=========== PROPERTIES ===========-->
+            <section class="section property" id="property" aria-label="property">
+                <div class="container">
+                    <h2 class="h2 section-title">Featured Properties</h2>
+                    <p class="section-text">
+                        Unlock the door to your dream home with our expert guidance. From evaluating the perfect property to meeting with dedicated agents, we're here to help you close the deal on your next chapter in life.
+                    </p>
+                    <ul class="property-list">
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="image/pic1.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">2-A,Mataasnakahoy,Batangas,PH</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">7500sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$4500</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="image/pic2.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Calamba,laguna,PH</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">8000sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$4000</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="image/pic3.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Baseviewhomes,lipa,batangas,PH</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">8000sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$5000</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="image/pic4.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Bongbaryo,Caloocan,PH</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">7500sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$3500</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="image/pic5.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Bubuyan,Mataasnakahoy,Batangas,PH</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">7500sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$3500</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="image/pic6.jpg" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">San salvador,Lipa,Batangas,PH</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">8000sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">4 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">$3500</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--=========== TESTIMONY ==========-->
+            <section class="section wrapper wrapper2 top">
+                <div class="container">
+                    <div class="text">
+                        <div class="heading">
+                            <h2>People Said</h2>
+                        </div>
+
+                        <div class="para">
+                            <p>"James Apartment Business is your key to success and family happiness. We don't just offer lucrative opportunities; we provide the foundation for a life filled with prosperity and joyful moments. With us, your journey to success is intertwined with creating a haven where your family thrives and celebrates each day. It's not just about renting apartments; it's about building a legacy of contentment and achievement. Join us, and let's craft a future where success and family happiness go hand in hand."</p>
+                            <div class="box flex">
+                                <div class="img">
+                                    <img src="image/James.jpg" alt="">
+                                </div> <br>
+                                <div class="name">
+                                    <h5>James Carl Dimaalihan</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--========= CONTACT =========-->
+            <section class="section contact" id="contact" aria-label="contact">
+                <div class="container">
+                    <h2 class="h2 section-title">Have a Question ? Get in touch</h2>
+
+                    <p class="section-text">
+                        A great platform to buy, sell, and rent your properties without any agent or comissions
+                    </p>
+                
+                    <a href="contact_page.html" class="btn btn-primary">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <span class="span">Contact us</span>
+                    </a>
+                    
+            
+                </div>
+            </section>
+
+            <!--======= FOOTER ========-->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="footer-brand">
+                            <a href="#" class="logo">
+                                <ion-icon name="home-outline"></ion-icon> JamesApartment
+                            </a>
+                            <p class="footer-text">
+                                A great platform to buy, sell and rent your properties without any agent or comissions
+                            </p>
+                        </div>
+
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">Company</p>
+                            </li>
+                            <li>
+                                <a href="#about" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">About us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Services</span>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="#properties" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Pricing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Contact us</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Login</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">More Links</p>
+                            </li>
+                            <li>
+                                <a href="#properties" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Listing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">Contact Details</p>
+                            </li>
+
+                            <li class="footer-item">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <address class="address">
+                                    Purok 4 <br>
+                                    Bubuyan, <br>
+                                    Mataasnakahoy
+                                    <a href="https://www.bing.com/maps?mepi=24%7E%7ETopOfPage%7ELargeMapLink&ty=18&q=Bubuyan%2C+Mataas+Na+Kahoy%2C+Calabarzon%2C+Philippines&vdpid=7898752647920877569&mb=13.994983%7E121.103149%7E13.971778%7E121.114182&ppois=13.983380317687988_121.1086654663086_Bubuyan%2C+Mataas+Na+Kahoy%2C+Calabarzon%2C+Philippines_%7E&cp=13.983378%7E121.278763&v=2&sV=1&FORM=MIRE&qpvt=google+maps+bubuyan+mataasnakahoy+batangas&lvl=11.0" class="address-link">View on Google Maps</a>
+                                </address>
+                            </li>
+
+                            <li class="footer-item">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <a href="mailto: jamescarldimaalihan@gmail.com" class="footer-link">jamescarldimaalihan@gmail.com</a>
+                            </li>
+
+                            <li class="footer-item">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <a href="tel: 000-111-22233" class="footer-link">0930++12700</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="copyright">
+                            &copy; 2023 JamesApartment. All rights reserved by <a href="#" class="copyright-link">james</a>
+                        </p>
+
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+            <!--=========== BACK-TO-TOP ==========-->
+            <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+                <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+            </a>
+        </article>
+   </main>
+    
+  <!--========= custom js link =========-->
+  <script src="js/main.js"></script>
+
+  <!--=========== ionicon link ==========-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 
